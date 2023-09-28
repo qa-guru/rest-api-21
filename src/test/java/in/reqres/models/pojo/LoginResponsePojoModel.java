@@ -1,6 +1,6 @@
-package in.reqres.models;
+package in.reqres.models.pojo;
 
-public class LoginResponseModel {
+public class LoginResponsePojoModel {
     String token;
 
     public String getToken() {
