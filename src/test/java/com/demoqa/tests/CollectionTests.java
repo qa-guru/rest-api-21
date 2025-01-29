@@ -19,7 +19,7 @@ public class CollectionTests extends TestBase {
 
     @Test
     void addBookToCollectionTest() {
-        String authData = "{\"userName\":\"testtestov31\",\"password\":\"Testtestov31_%\"}";
+        String authData = "{\"userName\":\"" + login + "\",\"password\":\"" + password + "\"}";
 
         Response authResponse = given()
                 .log().uri()
@@ -78,7 +78,7 @@ public class CollectionTests extends TestBase {
 
     @Test
     void addBookToCollection_withDelete1Book_Test() {
-        String authData = "{\"userName\":\"testtestov31\",\"password\":\"Testtestov31_%\"}";
+        String authData = "{\"userName\":\"" + login + "\",\"password\":\"" + password + "\"}";
 
         Response authResponse = given()
                 .log().uri()
@@ -140,7 +140,7 @@ public class CollectionTests extends TestBase {
 
     @Test
     void negative400BookToCollectionTest() {
-        String authData = "{\"userName\":\"testtestov31\",\"password\":\"Testtestov31_%\"}";
+        String authData = "{\"userName\":\"" + login + "\",\"password\":\"" + password + "\"}";
 
         Response authResponse = given()
                 .log().uri()
